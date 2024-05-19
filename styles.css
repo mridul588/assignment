@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#sidebar {
+    background: #e3e3e3;
+    color: rgb(87, 80, 80);
+    min-height: 100vh;
+    padding: 15px;
+    margin-left: -15px; /* Move sidebar content slightly left */
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    background: #e3e3e3;
+    text-align: center;
+}
+
+#sidebar ul {
+    padding: 0;
+}
+
+#sidebar ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: rgb(55, 55, 55);
+    text-decoration: none;
+}
+
+header {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.actions button {
+    margin-right: 10px;
+}
+
+.card {
+    margin: 10px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h5 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.card .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disposition {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.disposition h6 {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.disposition p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th,
+.table td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.text-danger {
+    color: red;
+}
+
+.text-warning {
+    color: orange;
+}
+
+.text-success {
+    color: green;
+}
+
+.call-record div {
+    margin-bottom: 20px;
+}
+
+.call-record svg {
+    width: 100%;
+    height: 50px;
+}
+
+.list-unstyled {
+    margin-left: 52px;
+}
+
+.yo {
+    background: white;
+}
+
+.yo1 {
+    background: #e3e3e3;
+    width: 2000px;
+    margin-left: -15px;
+}
+
+/* Add custom button style */
+.btn-custom {
+    background-color: #e7e5e5; /* Dark grey color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Adjust button padding */
+    margin-right: 10px; /* Add some space between buttons */
+}
+
+/* Adjust checkbox style */
+.btn-custom input[type="checkbox"] {
+    margin-right: 5px; /* Add space between checkbox and button text */
+}
+
+/* Right-hand side section styles */
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+.action select {
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.view-history {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.view-history img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional: If you want to style the checkbox */
+input[type="checkbox"] {
+    margin-right: 5px; /* Add space between checkbox and name */
+}
+
+/* Add a horizontal line between <p> tags */
+.content p:not(:last-child) {
+    margin-bottom: 10px; /* Optional: Adjust spacing between <p> tags */
+    border-bottom: 1px solid #ccc; /* Add horizontal line */
+    padding-bottom: 10px; /* Optional: Adjust spacing below horizontal line */
+}
+
+/* Style for blue button */
+.btn-blue {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+/* Style for dropdown arrow */
+.arrow {
+    margin-left: 5px;
+}
+
+/* Style for dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show dropdown content when button is clicked */
+.dropdown-content.show {
+    display: block;
+}
+/* Custom styles to position the modal on the right */
+.modal-right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px; /* Adjust as needed */
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.modal-right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal-right .modal-body {
+    padding: 15px;
+}
+
+/* Optional: adjust the backdrop to cover only the left portion of the screen */
+.modal-backdrop.modal-right-backdrop {
+    left: auto;
+    right: 320px; /* Same width as the modal */
+    width: calc(100% - 320px); /* Full screen width minus the modal width */
+}
+
+#dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px 0; /* Added padding */
+}
+
+#dropdownContent a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px; /* Adjusted padding */
+}
+
+#dropdownContent a:hover {
+    background-color: #f1f1f1;
+}
+
+.action select {
+    width: 200px; /* Adjust the width as needed */
+    padding: 5px;
+    background-color: #f4f4f4; /* Greyish background color */
+    border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.filter-container {
+    width: 470px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: relative;
+}
+
+.filter-header input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter-body {
+    margin-top: 15px;
+}
+
+.filter-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-item label {
+    width: 40%;
+    margin-bottom: 0;
+    color: #555;
+    margin-right: 10px;
+}
+
+.filter-item input[type="text"],
+.filter-item select {
+    width: 55%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter-item input[type="date"] {
+    width: calc(25% - 5px);
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filter-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.date-option {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-option label {
+    color: #555;
+}
+
+.filter-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.apply-btn, .close-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.close-btn {
+    background-color: #ddd;
+    color: #555;
+}
+
+

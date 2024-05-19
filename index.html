@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2">
+                <div class="sidebar-header">
+                    <img src="./asset/assets_11-Account-listing-call_2024-05-19/new-logo.png" alt="Logo" style="max-width: 100%;">
+                </div>
+                <ul class="list-unstyled components">
+                    <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/computer.png" alt="" style="margin-right: 15px;">Dashboard</a></li>
+                    <li>
+                        <a href="#collectionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/money.png" alt="" style="margin-right: 15px;">Collection
+                        </a>
+                        <ul class="collapse list-unstyled" id="collectionSubmenu">
+                            <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/stacks.png" alt="" style="margin-right: 15px;">Batch</a></li>
+                            <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/users.png" alt="" style="margin-right: 15px;">Account</a></li>
+                            <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/pie-chart-alt.png" alt="" style="margin-right: 15px;">Daily Report</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="./asset/assets_11-Account-listing-call_2024-05-19/file.png" alt="" style="margin-right: 15px;">Pre-Litigation</a></li>
+                    <li><a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="./asset/assets_11-Account-listing-call_2024-05-19/legal-document.png" alt="" style="margin-right: 15px;">Legal Notices</a></li>
+                    <li><a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="./asset/assets_11-Account-listing-call_2024-05-19/police.png" alt="" style="margin-right: 15px;">FIR</a></li>
+                    <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/files.png" alt="" style="margin-right: 15px;">Litigation</a></li>
+                    <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/customer-service.png" alt="" style="margin-right: 15px;">Communication</a></li>
+                    <li><a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="./asset/assets_11-Account-listing-call_2024-05-19/user-alt.png" alt="" style="margin-right: 15px;">Super-Admin</a></li>
+                    <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/users.png" alt="" style="margin-right: 15px;">Users & Roles</a></li>
+                    <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/pie-chart-alt.png" alt="" style="margin-right: 15px;">Account</a></li>
+                    <li><a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/news.png" alt="" style="margin-right: 15px;">Invoices</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-md-10 yo">
+                <header class="yo1">
+                    <h2><span style="font-size: 44px;">Accounts</span> <span style="font-size: 14px;">Total Results - 3422</span></h2>
+                </header>
+                
+                <div class="actions d-flex justify-content-between mt-3">
+                    <div class="action-buttons">
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#filter">
+                            <input type="checkbox"> Filter
+                        </button>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#sort">
+                            <input type="checkbox"> Sort by
+                        </button>
+                    </div>
+                <div class="dropdown">
+                    <button class="btn btn-blue" onclick="toggleDropdown()">Select for bulk action <span class="arrow">&#9660;</span></button>
+                    <div class="dropdown-content" id="dropdownContent" >
+                        <!-- Dropdown content here -->
+                        <a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/" alt=""> Download</a>
+                        <a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/police.png" alt="FIR Icon"> FIR</a>
+                        <a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/legal-document.png" alt="Legal Notice Icon"> Issue Legal Notice</a>
+                        <a href="#"><img src="./asset/assets_11-Account-listing-call_2024-05-19/message.png" alt="Communicate Icon"> Communicate</a>
+                    </div>
+                </div>
+                
+                    
+                </div>
+
+                <div class="card mt-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            
+                            <h5 style="color: blue;"> <input type="checkbox"> Ritu Raj Srivastava (124516716)</h5>
+                            <p>Batch No. - 5</p>
+                            <hr />
+                            <p>Product - Tractor<br>Rs. 45,1671<br>180+ Days</p>
+                            <hr />
+                            <p>Current Status - <span class="text-danger">High Risk</span></p>
+                        </div>
+                        
+                        <div class="disposition">
+                            <h6><span style="font-size: 12px;">Last Disposition</span></h6>
+                            <p style="font-size:20px; font-weight: bold;">Broken Promise To Pay</p>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>Assigned Date</th>
+                                        <td>10th Jan 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>1st Called Date</th>
+                                        <td>11th Jan 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Last Disposition</th>
+                                        <td>28th May 2021</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="action">
+                            <div>action</div>
+                            <select class="form-control">
+                                <option>Select</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                            <p>view history</p>
+                            <div class="view-history">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/phone.png" alt="Call" data-toggle="modal" data-target="#callRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/message.png" alt="SMS" data-toggle="modal" data-target="#SMSRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/mail.png" alt="Email" data-toggle="modal" data-target="#EmailRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/group-29.png" alt="WhatsApp" data-toggle="modal" data-target="#WhatsAppRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/telemarketer.png" alt="Dispositions" data-toggle="modal" data-target="#DispositionsRecordModal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h5 style="color: blue;"> <input type="checkbox"> Ashish Kumar Srivastava (736622091)</h5>
+                            <p>Batch No. - 5</p>
+                            <hr />
+                            <p>Product - CAR<br>Rs. 45,1671<br>180+ Days</p>
+                            <hr />
+                            <p>Current Status - <span class="text-warning">Medium Risk</span></p>
+                        </div>
+                        <div class="disposition">
+                            <h6 style="font-size: 12px;">Last Disposition</h6>
+                            <p style="font-size: 20px; font-weight: bold;">Refused To Pay</p>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>Assigned Date</th>
+                                        <td>9th Jan 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>1st Called Date</th>
+                                        <td>11th Jan 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Last Disposition</th>
+                                        <td>24th May 2021</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="action">
+                            <div>action</div>
+                            <select class="form-control">
+                                <option>Select</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                            <p>view history</p>
+                            <div class="view-history">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/phone.png" alt="Call" data-toggle="modal" data-target="#callRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/message.png" alt="SMS" data-toggle="modal" data-target="#SMSRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/mail.png" alt="Email" data-toggle="modal" data-target="#EmailRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/group-29.png" alt="WhatsApp" data-toggle="modal" data-target="#WhatsAppRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/telemarketer.png" alt="Dispositions" data-toggle="modal" data-target="#DispositionsRecordModal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h5 style="color: blue;"> <input type="checkbox"> Deep Babu Gupta (638801923)</h5>
+                            <p>Batch No. - 5</p>
+                            <hr />
+                            <p>Product - Two Wheeler<br>Rs. 45,1671<br>180+ Days</p>
+                            <hr />
+                            <p>Current Status - <span class="text-success">Low Risk</span></p>
+                        </div>
+                        <div class="disposition">
+                            <h6 style="font-size: 12px;">Last Disposition</h6>
+                            <p style="font-size: 20px; font-weight: bold;">Ringing, No Response</p>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>Assigned Date</th>
+                                        <td>10th Jan 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>1st Called Date</th>
+                                        <td>11th Jan 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Last Disposition</th>
+                                        <td>20th May 2021</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="action">
+                            <div>action</div>
+                            <select class="form-control">
+                                <option>Select</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                            <p>view history</p>
+                            <div class="view-history">
+                                
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/phone.png" alt="Call" data-toggle="modal" data-target="#callRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/message.png" alt="SMS" data-toggle="modal" data-target="#SMSRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/mail.png" alt="Email" data-toggle="modal" data-target="#EmailRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/group-29.png" alt="WhatsApp" data-toggle="modal" data-target="#WhatsAppRecordModal">
+                                <img src="./asset/assets_11-Account-listing-call_2024-05-19/telemarketer.png" alt="Dispositions" data-toggle="modal" data-target="#DispositionsRecordModal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="callRecordModal" class="modal fade modal-right" tabindex="-1" role="dialog" aria-labelledby="callRecordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="callRecordModalLabel">Call Record</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p>16 May 2021 <hr /></p> 
+                        <div>
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/play-button_3.png" alt="SMS">
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/record-progress-bar_5.png" alt="SMS">
+                        </div>
+                        <div>
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/play-button_2.png" alt="SMS">
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/record-progress-bar_4.png" alt="SMS">
+                        </div>
+                    </div>
+                    <div>
+                        <p>15 May 2021 <hr /></p> 
+                        <div>
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/play-button.png" alt="SMS">
+                            <img src="./asset/assets_11-Account-listing-call_2024-05-19/record-progress-bar_2.png" alt="SMS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- modal 2 -->
+<div id="SMSRecordModal" class="modal fade modal-right" tabindex="-1" role="dialog" aria-labelledby="SMSRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SMSRecordModalLabel">SMS Record</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the SMS record modal. You can add your content here.</p>
+                <img src="" alt="Image">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal 3 -->
+<div id="EmailRecordModal" class="modal fade modal-right" tabindex="-1" role="dialog" aria-labelledby="callRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EmailRecordModalLabel">Call Record</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>This is Email Record Modal</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal 4 -->
+<div id="WhatsAppRecordModal" class="modal fade modal-right" tabindex="-1" role="dialog" aria-labelledby="callRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="WhatsAppRecordModalLabel">Call Record</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>this is WhatsApp Modal</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal 5 -->
+<div id="DispositionsRecordModal" class="modal fade modal-right" tabindex="-1" role="dialog" aria-labelledby="callRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="DispositionsRecordModalLabel">Call Record</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>This is Disposition modal</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="filter" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="callRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterLabel">Filter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="filterPopup" class="filter-container">
+                    <div class="filter-header">
+                        <input type="text" placeholder="Search by keywords">
+                    </div>
+                    <div class="filter-body">
+                        <div class="filter-item">
+                            <label for="batchNumber">Search by Batch Number</label>
+                            <input type="text" id="batchNumber">
+                        </div>
+                        <div class="filter-item">
+                            <label for="productPortfolio">Product/Portfolio</label>
+                            <select id="productPortfolio">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label for="overdueBucket">Overdue Bucket</label>
+                            <select id="overdueBucket">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label for="lastDisposition">Last Disposition</label>
+                            <select id="lastDisposition">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label for="loanAccountFrom">Loan Account Range</label>
+                            <input type="text" id="loanAccountFrom" placeholder="From">
+                            <input type="text" id="loanAccountTo" placeholder="To">
+                        </div>
+                        <div class="filter-item">
+                            <label for="status">Status</label>
+                            <select id="status">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Search by Date</label>
+                        </div>
+                        <div class="filter-item">
+                            
+                            <div class="date-option">
+                                <input type="radio" id="dateBetween" name="dateOption">
+                                <label for="dateBetween">Date Between</label>
+                                <input type="date" class="hi" id="dateFrom">
+                                <input type="date" class="hi"  id="dateTo">
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="date-option">
+                                <input type="radio" id="specificDate" name="dateOption" checked>
+                                <label for="specificDate">Specific Date</label>
+                                <input type="date" id="specificDateInput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-footer">
+                        <button class="apply-btn">Apply</button>
+                        <!-- <button class="close-btn" onclick="closePopup()">Close</button> -->
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sort" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="callRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sortLabel">Sort modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>This is Sort modal</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- Ensure these scripts are included -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Function to handle modal show and hide events
+        function handleModal(modalId) {
+            $(modalId).on('show.bs.modal', function (e) {
+                // Add custom backdrop class
+                $('.modal-backdrop').addClass('modal-right-backdrop');
+            });
+
+            $(modalId).on('hidden.bs.modal', function (e) {
+                // Remove custom backdrop class
+                $('.modal-backdrop').removeClass('modal-right-backdrop');
+            });
+        }
+
+        // Call handleModal function for each modal
+        handleModal('#callRecordModal');
+        handleModal('#SMSRecordModal');
+        handleModal('#WhatsAppRecordModal');
+        handleModal('#DispositionsRecordModal');
+        handleModal('#EmailRecordModal');
+        handleModal('#filter');
+        handleModal('#sort');
+    });
+</script>
+><script src="script.js"></script>
+
+
+</body>
+</html>
